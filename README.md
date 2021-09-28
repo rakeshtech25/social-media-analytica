@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby Version 2.7.0
 
-Things you may want to cover:
+* Rails Version 6.0.3
 
-* Ruby version
+#### Instructions
 
-* System dependencies
+* Clone repo
+* Install the bundle as `bundle install`
+* Start the rails server using `rails s`
+* Visit `localhost:3000` on browser or hit `curl localhost:3000` on terminal
+* Run the test cases `bundle exec rspec `
 
-* Configuration
+##### Description
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Application to let client know what is happening on the social networks
+* Social media analytical result from Facebook, Twitter, Instagram
+* Error handeling for various HTTP status code 
+* Expected output from the takehome.io endpoint is a valid JSON for success case
+* JSON response of the output from the three social networks in the format:
+	`{ twitter: [tweets], facebook: [statuses], instagram: [photos] }`
+* Test cases management useing Rspec library
