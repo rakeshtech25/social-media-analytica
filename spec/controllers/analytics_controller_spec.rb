@@ -3,7 +3,6 @@
 require 'rails_helper'
 
 describe AnalyticsController, type: :controller do
-
   let(:complete_data) do
     {
       twitter: %w[one-tweet two-tweet],
@@ -21,9 +20,7 @@ describe AnalyticsController, type: :controller do
   end
 
   describe 'GET index' do
-
     context 'when result is success' do
-
       before do
         expect_any_instance_of(SocialMediaManager).to receive(:execute).once.and_return(media_response)
         get :index
