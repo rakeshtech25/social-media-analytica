@@ -16,6 +16,8 @@ gem 'puma', '~> 4.1'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'active_interaction'
+gem 'httparty'
 gem 'dotenv-rails'
 
 # Use Active Storage variant
